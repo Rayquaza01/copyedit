@@ -4,10 +4,7 @@ An easy way to edit your clipboard contents!
 
 copyedit is intended to be an alternative to [Text Editor Anywhere](https://www.listary.com/text-editor-anywhere)
 
-## Installation
-
--   Run `git clone https://github.com/Rayquaza01/copyedit`
--   Run `pip3 install pyperclip` and, if applicable, install the necessary programs for pyperclip to work (see https://pypi.org/project/pyperclip/)
+`pip3 install git+https://github.com/Rayquaza01/copyedit`
 
 ## Usage
 
@@ -17,7 +14,7 @@ copyedit is intended to be an alternative to [Text Editor Anywhere](https://www.
 
 ## Options
 
-The options are saved in `config.json`.
+The options are saved in `~/copyedit.json` and can be overridden in a config file per folder.
 
 -   `editor`: The command to run your preferred text editor. The file with the clipboard contents will be passed as an argument. Defaults to `vim`
 -   `default_extension`: The default file extension to use. Can be changed while running. Defaults to `txt`
