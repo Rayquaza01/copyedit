@@ -35,7 +35,7 @@ if __name__ == "__main__":
         import urllib.request
         urllib.request.urlretrieve("https://raw.githubusercontent.com/Rayquaza01/copyedit/master/copyedit.json", configFile)
         print("Downloaded sample config file to {0}".format(configFile))
-    config = json.loads(configFile)
+    config = json.loads(readFile(configFile))
     now = time.strftime("%Y%m%d%H%M%S")  # year, month, day, hour, minutes, seconds; used for file name
     storagedir = os.path.expanduser(config["directory"])  # dir to store files in
     if not os.path.exists(storagedir):  # create dir if doesn't exist
