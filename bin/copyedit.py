@@ -31,10 +31,10 @@ def configExists(name):
 if __name__ == "__main__":
     configFile = configExists("copyedit.json")
     if not configFile:  # download config file if does not exist
+        configFile = os.path.expanduser("~/copyedit.py")
         import urllib.request
         urllib.request.urlretrieve("https://raw.githubusercontent.com/Rayquaza01/copyedit/master/copyedit.json", configFile)
         print("Downloaded sample config file to {0}".format(configFile))
-        configFile = os.path.expanduser("~/copyedit.py")
     config = json.loads(configFile)
     now = time.strftime("%Y%m%d%H%M%S")  # year, month, day, hour, minutes, seconds; used for file name
     storagedir = os.path.expanduser(config["directory"])  # dir to store files in
