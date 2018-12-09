@@ -1,0 +1,6 @@
+{
+    "editor": "vim",
+    "default_extension": "txt",
+    "directory": "~/copyedit",
+    "delete_on_close": false
+}
