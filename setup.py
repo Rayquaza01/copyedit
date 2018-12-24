@@ -19,6 +19,6 @@ setup(name="copyedit",
       package_data={"": ["README.md"]},
       classifiers=[
           "Programming Language :: Python :: 3",
-          "License :: OSI Approved :: MIT",
+          "License :: OSI Approved :: MIT License",
           "Operating System :: OS Independent"
       ])

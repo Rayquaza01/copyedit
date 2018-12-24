@@ -4,7 +4,9 @@ An easy way to edit your clipboard contents!
 
 copyedit is intended to be an alternative to [Text Editor Anywhere](https://www.listary.com/text-editor-anywhere)
 
-`pip3 install git+https://github.com/Rayquaza01/copyedit`
+`pip3 install copyedit` or `pip3 install git+https://github.com/Rayquaza01/copyedit`
+
+[Copyedit uses pyperclip. You may need to manually install additional dependencies, depending on your system.](https://pypi.org/project/pyperclip/)
 
 ## Usage
 
@@ -20,3 +22,10 @@ The options are saved in `~/copyedit.json` and can be overridden in a config fil
 -   `default_extension`: The default file extension to use. Can be changed while running. Defaults to `txt`
 -   `directory`: The directory to save the temporary clipboard files in. Defaults to `~/copyedit`
 -   `delete_on_close`: Whether to delete the temporary file after copyedit finishes. Defaults to `false`
+
+## Arguments
+
+Two arguments are accepted:
+
+-   `--blank` (`-b`): make the file blank, instead of using clipboard contents. Will still copy file contents to clipboard after the editor is closed
+-   `--deleteOnClose` (`-doc`): Delete on close, overrides the config option.

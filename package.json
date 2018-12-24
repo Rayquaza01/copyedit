@@ -1,0 +1,21 @@
+{
+    "name": "copyedit",
+    "version": "1.0.0",
+    "description": "An easy way to edit your clipboard contents!",
+    "main": "bin/copyedit.py",
+    "scripts": {
+        "build": "python3 setup.py sdist bdist_wheel",
+        "upload:test": "twine upload --repository-url https://test.pypi.org/legacy/ dist/*",
+        "upload": "twine upload dist/*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rayquaza01/copyedit.git"
+    },
+    "author": "Rayquaza01",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Rayquaza01/copyedit/issues"
+    },
+    "homepage": "https://github.com/Rayquaza01/copyedit#readme"
+}
