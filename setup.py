@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name="copyedit",
-      version="1.0.0",
+      version="1.0.1",
       description="An easy way to edit your clipboard contents!",
       long_description=long_description,
       long_description_content_type="text/markdown",
